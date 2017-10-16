@@ -3,27 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>To Do List</title>
-    <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
-    <div class="container">
-        <div class="topimage"><img src="img/download.jpg"></div>
-        <div class="timeanddate"><h2>This is where the time and date will be.</h2></div>
-        <div class="tasks">
-                <h2>My To Do List</h2>
-                <input type="text" id="myInput" placeholder="Tasks">
-                <span onclick="newElement()" class="addBtn">Add</span>
-            </div>
+    <h2>My To Do List</h2>
 
-            <ul id="myUL">
-                <li>Hit the gym</li>
-                <li class="checked">Pay bills</li>
-                <li>Meet George</li>
-                <li>Buy eggs</li>
-                <li>Read a book</li>
-                <li>Organize office</li>
-            </ul>
-        </div>
+    <form id="todoform">
+    <input id="todoinput"></input>
+    <button type="text" onclick="todolist()"> Add </button>
+    </form>
+    <ul id="todolist"></ul>
     <script src="index.js"></script>
 </body>
 </html>

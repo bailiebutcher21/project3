@@ -1,9 +1,7 @@
-var currentdate = new Date();
-var datetime = "Last Sync: " + currentdate.getDate() + "/"
-    + (currentdate.getMonth()+1)  + "/"
-    + currentdate.getFullYear() + " @ "
-    + currentdate.getHours() + ":"
-    + currentdate.getMinutes() + ":"
-    + currentdate.getSeconds();
-
-document.write("").innerHTML("timeanddate");
+function todolist(){
+    var item=document.getElementById("todoinput").value;
+    var text=document.createTextNode(item);
+    var newItem=document.createElement("li");
+    newItem.appendChild(text);
+    document.getElementById("todolist").appendChild(newItem)
+}
